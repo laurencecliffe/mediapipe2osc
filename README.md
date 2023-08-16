@@ -19,8 +19,20 @@ Then, run bridge.js to enable OSC sending:
 
 You should see the message 'osc success'.
 
-Open one of the file (for example: 
+Open one of the files in your browser (for example: mediapipe-face-detection-to-osc.html) grant permission for your webcam to begin sending OSC messages.
 
 UDP is currently set to send on port 8080 and receive on port 9129.
 
 You wil then need another application to receive your OSC messages, you can test this pretty quickly in Ableton or Max, or build a quick OSC receiver in Unity or Unreal.
+
+# Current capabilities
+
+mediapipe-face-detection-to-osc: sends value 1 as an OSC message when a face is detected in the camera frame and value 0 when no face is detected.
+
+mediapipe-face-detection-landmarks-to-osc: sends the x and y coordinates of the rightEye, leftEye, noseTip, mouthCenter, rightEar and leftEar as OSC messages.
+
+mediapipe-iris-distance-to-osc: sends the distance from the camera to the face in cm as an OSC message.
+
+mediapipe-pose-to-osc: for now this just sends some basic pose landmark coordinates via OSC
+
+
