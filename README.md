@@ -1,5 +1,5 @@
 # mediapipe2osc
- A Javascript solution for sending mediapipe landmark coordinates via UDP as OSC messages to any application that can receive them such as Unity, Unreal, Ableton Live, Max and more. Offers the potential to control and manipluate data, audio and visual output using your body, hands and face.
+ A Javascript solution for sending mediapipe landmark coordinates via UDP as OSC messages to any application that can receive them such as Unity, Unreal, Ableton Live, Max and more. Offers the potential to control and manipluate data, audio and visual output using body or face recognition and positional tracking.
 
  This solution uses the [osc.js library](https://github.com/adzialocha/osc-js#osc-js) and builds on [monlim's MediaPipe-Hands-OSC](https://github.com/monlim/MediaPipe-Hands-OSC) to include face and body recogition and tracking.
 
