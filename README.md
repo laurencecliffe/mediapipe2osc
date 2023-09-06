@@ -23,7 +23,7 @@ Open one of the files in your browser (for example: mediapipe-face-detection-to-
 
 UDP is currently set to send on port 8080 and receive on port 9129.
 
-You wil then need another application to receive your OSC messages, you can test this pretty quickly in Ableton or Max, or build a quick OSC receiver in Unity or Unreal.
+You will then need another application to receive your OSC messages, you can test this pretty quickly in Ableton or Max, or build a quick OSC receiver in Unity or Unreal.
 
 # Current capabilities
 
