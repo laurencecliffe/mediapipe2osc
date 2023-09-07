@@ -67,27 +67,51 @@ function onResults(results) {
 
 
         // Find positions of landmarks and send their coordinates as OSC messages here
-
+            
+            // Nose x coord
+            var noseX = new OSC.Message("/noseX/",results.poseLandmarks[0].x);
+            osc.send(noseX);
+            // Nose y coord
+            var noseY = new OSC.Message("/noseY/",results.poseLandmarks[0].y);
+            osc.send(noseY)
+            // Left index finger x coord
             var leftIndexX = new OSC.Message("/leftIndexX/",results.poseLandmarks[19].x);
             osc.send(leftIndexX);
+            // Left index finger y coord
             var leftIndexY = new OSC.Message("/leftIndexY/",results.poseLandmarks[19].y);
             osc.send(leftIndexY);
+            // Right index finger x coord
             var rightIndexX = new OSC.Message("/rightIndexX/",results.poseLandmarks[20].x);
             osc.send(rightIndexX);
+            // Right index finger y coord
             var rightIndexY = new OSC.Message("/rightIndexY/",results.poseLandmarks[20].y);
             osc.send(rightIndexY);
-
-
-
-
-
-//console.log(leftIndex);
-
+            // Left hip x coord
+            var leftHipX = new OSC.Message("/leftHipX/",results.poseLandmarks[23].x);
+            osc.send(leftHipX);
+            // Left hip y coord
+            var leftHipY = new OSC.Message("/leftHipY/",results.poseLandmarks[23].y);
+            osc.send(leftHipY);
+            // Right hip x coord
+            var rightHipX = new OSC.Message("/rightHipX/",results.poseLandmarks[24].x);
+            osc.send(rightHipX);
+            // Right hip y coord
+            var rightHipY = new OSC.Message("/rightHipY/",results.poseLandmarks[24].y);
+            osc.send(rightHipY);
+            // Left foot index x coord
+            var leftFootIndexX = new OSC.Message("/leftFootIndexX/",results.poseLandmarks[31].x);
+            osc.send(leftFootIndexX);
+            // Left foot index y coord
+            var leftFootIndexY = new OSC.Message("/leftFootIndexY/",results.poseLandmarks[31].y);
+            osc.send(leftFootIndexY);
+             // Right foot index x coord
+             var rightFootIndexX = new OSC.Message("/rightFootIndexX/",results.poseLandmarks[32].x);
+             osc.send(rightFootIndexX);
+             // Right foot index y coord
+             var rightFootIndexY = new OSC.Message("/rightFootIndexY/",results.poseLandmarks[32].y);
+             osc.send(rightFootIndexY);
 
     }
-
-
-
 
     canvasCtx.restore();
   
