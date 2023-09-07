@@ -16,8 +16,7 @@ const canvasCtx = canvasElement.getContext('2d');
 
 var osc = new OSC();
 osc.open(); //connect by default to ws://localhost.8080
-// We'll add this to our control panel later, but we'll save it here so we can
-// call tick() each time the graph runs.
+// We'll add this to our control panel later, but we'll save it here so we can call tick() each time the graph runs.
 const fpsControl = new controls.FPS();
 // Optimization: Turn off animated spinner after its hiding animation is done.
 const spinner = document.querySelector('.loading');
@@ -118,8 +117,7 @@ function onResults(results) {
 }
 const pose = new mpPose.Pose(options);
 pose.onResults(onResults);
-// Present a control panel through which the user can manipulate the solution
-// options.
+// Present a control panel through which the user can manipulate the solution options.
 new controls
     .ControlPanel(controlsElement, {
     selfieMode: true,
@@ -137,8 +135,7 @@ new controls
     new controls.Toggle({ title: 'Selfie Mode', field: 'selfieMode' }),
     new controls.SourcePicker({
         onSourceChanged: () => {
-            // Resets because this model gives better results when reset between
-            // source changes.
+            // Resets because this model gives better results when reset between source changes.
             pose.reset();
         },
         onFrame: async (input, size) => {
