@@ -2,28 +2,29 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>mediapipe2osc-face-detection</title>
+  <title>mediapipe2osc-hand-landmarks</title>
     <meta charset="utf-8">
   <link rel="icon" href="favicon.ico">
-<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@mediapipe/control_utils@0.6/control_utils.css" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@mediapipe/control_utils_3d@0.3/control_utils_3d.css" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@mediapipe/control_utils@0.6/control_utils.css" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="demo.css" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils@0.3/camera_utils.js" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/@mediapipe/control_utils@0.6/control_utils.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/control_utils_3d@0.3/control_utils_3d.js" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils@0.3/drawing_utils.js" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/face_detection/face_detection.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands@0.4/hands.js" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/gh/adzialocha/osc-js/lib/osc.min.js" crossorigin="anonymous"></script>
-  
-  <link rel="stylesheet" href="./style.css">
+
+<link rel="stylesheet" href="./style.css">
 
 </head>
 <body>
 <!-- partial:index.partial.html -->
-<div class="container">
+<body>
+
+  <div class="container">
     <video class="input_video"></video>
-    <div class="canvas-container">
-    <canvas class="output_canvas" width="1280px" height="720px">
-    </canvas>
-    </div>
+    <canvas class="output_canvas" width="1280px" height="720px"></canvas>
     <div class="loading">
       <div class="spinner"></div>
       <div class="message">
@@ -35,8 +36,9 @@
   </div>
   <div class="control-panel">
   </div>
+  
 <!-- partial -->
-  <script type="module" src="./mediapipe2osc-face-detection.js"></script>
+  <script type="module" src="./mediapipe2osc-hand-landmarks.js"></script>
 
 </body>
 </html>

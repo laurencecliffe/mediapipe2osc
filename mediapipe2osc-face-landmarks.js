@@ -54,7 +54,7 @@ function onResults(results) {
         var faceDetected = new OSC.Message("/faceDetected true");
         osc.send(faceDetected);
 
-        // Send OSC messages comprising the coordinates of all the detected faces individual landmarks
+        // Send the coordinates of all the detected face landmarks as OSC messages
 
         let i = 0;
         while (i < results.detections.length) {
@@ -89,7 +89,7 @@ function onResults(results) {
             i += 1;
         }
 
-        // Send OSC message if no faces detected
+        // Send OSC message if no face detected
 
     } else {
         faceDetected = new OSC.Message("/faceDetected false");

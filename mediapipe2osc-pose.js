@@ -66,6 +66,8 @@ function onResults(results) {
 
 
         // Find positions of landmarks and send their coordinates as OSC messages here
+
+        // These are just a few of the possible pose landmarks - check the mediaipipe docs for a full list of pose landmarks along with their index.
             
             // Nose x coord
             var noseX = new OSC.Message("/noseX/",results.poseLandmarks[0].x);
