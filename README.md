@@ -21,6 +21,8 @@ You should see the message 'osc success'.
 
 Open one of the files in your browser (for example: mediapipe-face-detection-to-osc.html) grant permission for your webcam to begin sending OSC messages.
 
+<b>If your browser doesn't load the page, you will probably need to disable cross-origin restrictions (see instructions for your specific browser).</b>
+
 UDP is currently set to send on port 8080 and receive on port 9129.
 
 You will then need another application to receive your OSC messages, you can test this pretty quickly in Ableton or Max, or build a quick OSC receiver in Unity or Unreal.
